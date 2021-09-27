@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PaymentCalculatorTest {
 
     @Test
-    public void paymentCalculatorTest(){
+    void paymentCalculatorTest(){
         PaymentCalculator testCalculator = new PaymentCalculator(6000, 0.12, 100);
 
         int expected = 92;
