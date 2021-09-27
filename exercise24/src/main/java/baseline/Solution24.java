@@ -30,7 +30,7 @@ public class Solution24 {
         return userString.toCharArray();
     }
 
-    boolean isAnagram(String word1, String word2){
+    public boolean isAnagram(String word1, String word2){
         //isAnagram calls convertStringToArray to convert into char array
         char[] converted1 = convertStringToArray(word1);
         char[] converted2 = convertStringToArray(word2);

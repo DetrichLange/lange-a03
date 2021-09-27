@@ -1,5 +1,6 @@
-package baseline;
+package testbaseline;
 
+import baseline.Solution24;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
