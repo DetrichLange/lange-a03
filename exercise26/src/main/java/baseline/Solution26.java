@@ -29,25 +29,41 @@ public class Solution26 {
     static final Scanner userInput = new Scanner(System.in);
 
     private double promptDouble(String whichValue){
+        //Loop while true:
+            //Print message asking user "What is (whichValue)?"
+            //Try to return user input as double
+                //Catch NFE, prompt user to enter only numbers (repeat loop)
+        while(true){
+            System.out.printf("What is %s?%n", whichValue);
+            try{
+                return Double.parseDouble(userInput.nextLine());
+            }catch(NumberFormatException nfe){
+                System.out.printf("Please enter a number.%n");
+            }
+        }
     }
 
     private void outputStatement(int numberOfMonths){
+        System.out.printf("It will take you %d months to pay off this card.", numberOfMonths);
     }
 
     public static void main(String[] args){
         //Create Solution26 object named solutionApp
+        Solution26 solutionApp = new Solution26();
 
         //Call solutionApp.promptDouble three times to ask for "your balance", "the APR on the card (as a percent)", and
         //"the monthly payment you can make"
+        double userBalance = solutionApp.promptDouble("your balance");
+        double userAPR = solutionApp.promptDouble("the APR on the card (as a percent)") / 100;
+        double userPayment = solutionApp.promptDouble("the monthly payment you can make");
 
         //Construct new PaymentCalculator named solutionCalculator using the three retrieved values as arguments
-            //Loop while true:
-                //Print message asking user "What is (whichValue)?"
-                //Try to return user input as double
-                    //Catch NFE, prompt user to enter only numbers (repeat loop)
+        PaymentCalculator solutionCalculator = new PaymentCalculator(userBalance, userAPR, userPayment);
 
         //Set int numberOfMonths = solutionCalculator.calculateMonthsUntilPaidOff()
+        int numberOfMonths = solutionCalculator.calculateMonthsUntilPaidOff();
 
         //Print output statement using numberOfMonths
+        solutionApp.outputStatement(numberOfMonths);
     }
 }
