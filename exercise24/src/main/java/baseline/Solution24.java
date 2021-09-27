@@ -17,24 +17,22 @@ public class Solution24 {
     static final Scanner userInput = new Scanner(System.in);
 
     void introduction(){
-        //Print the introduction/explanation of how the program works
     }
 
     String promptString(String whichString){
-        //Prompt user to enter a string, return the string entered
     }
 
     public static void main(String[] args){
+        //Create application object to call methods
+        //Call introduction() to print explanation of what the program does
+        //Set String word1 by calling promptString("first") and word2 by calling promptString("second")
         //Create a new anagramSolver object for the solution
-        //Initialize two strings
-
-        //run introduction() to tell the user what to do
-
-        //Run promptString("first") and promptString("second") to collect both strings
-
-        //Make an anagramsolver object with both strings as arguments
-
-        //Run anagramSolver.solveAnagram to do the rest of the work (see AnagramSolver class)
+        //Call isAnagram(word1, word2)
+            //isAnagram calls convertStringToArray to convert into char array
+            //isAnagram calls sortArray with converted char array
+            //isAnagram compares both sorted arrays and returns true if they are equal
+                //If returned true, output statement saying that the words are anagrams
+                //Else, output statement saying the words are not anagrams
     }
 
 }
