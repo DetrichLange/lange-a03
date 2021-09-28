@@ -18,15 +18,47 @@ where r is the stated rate of return.
  */
 
 public class Solution29 {
-    final String ERRORMESSAGE = "Sorry. That's not a valid input.";
+    static final String ERRORMESSAGE = "Sorry. That's not a valid input.";
+    Scanner userInput = new Scanner(System.in);
+
+    private String promptRate(){
+        System.out.println("What is the rate of return?");
+        return userInput.nextLine();
+    }
+
+    public boolean checkRateValid(String userInput){
+        double rateOfReturn;
+
+        try{
+            rateOfReturn = Double.parseDouble(userInput);
+        }catch(NumberFormatException nfe){
+            System.out.println(ERRORMESSAGE);
+            return false;
+        }
+
+        if(rateOfReturn <= 0){
+            System.out.println(ERRORMESSAGE);
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    private void printOutput(String userInput){
+        System.out.printf("It will take %d years to double your initial investment.",
+                (int)Math.ceil(Double.parseDouble(userInput)));
+    }
 
     public static void main(String[] args) {
-        //Prompt for the rate of return.
-        //While true:
-            //If entered number is greater than zero, try to return it as a double.
-                //Else, print error message.
-            //If NFE is caught, print error message.
-        //Calculate (72 / rate of return), rounded up.
-        //Output statement with return rate cast to int.
+        Solution29 solutionApp = new Solution29();
+
+        while(true) {
+            String userInput = solutionApp.promptRate();
+            if (solutionApp.checkRateValid(userInput)) {
+                solutionApp.printOutput(userInput);
+                break;
+            }
+        }
     }
 }
