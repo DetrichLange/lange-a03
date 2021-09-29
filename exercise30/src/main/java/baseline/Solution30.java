@@ -13,10 +13,29 @@ Create a program that generates a multiplication table for the numbers 1 through
 
 public class Solution30 {
 
+    public StringBuilder timesTable(int tableSize){
+        //Initialize StringBuilder named outputTable
+        //For-loop y=0, y<tableSize, y++
+            //For-loop x=0, x<tableSize, x++
+                //Add x*y padded to 4 characters to outputTable
+            //Add line break to outputTable
+        StringBuilder outputTable = new StringBuilder();
+
+        for(int y=1; y<=tableSize; y++){
+            for(int x=1; x<=tableSize; x++){
+                outputTable.append(String.format("%4d", x*y));
+            }
+            outputTable.append("\n");
+        }
+
+        return outputTable;
+    }
+
     public static void main(String[] args) {
-        //For-loop i=0, i<=10, i++
-            //For-loop q=0, q<10, q++
-                //Printf "%4d", i*q
-            //Printf "%n"
+        Solution30 solutionApp = new Solution30();
+
+        StringBuilder outputTable = solutionApp.timesTable(12);
+
+        System.out.print(outputTable);
     }
 }
