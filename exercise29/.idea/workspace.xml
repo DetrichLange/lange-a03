@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc47be2-b98b-427e-bfb3-a3da43b118aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../exercise30/src/test/java/Solution30Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise31/src/main/java/baseline/Solution31.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise30/src/main/java/baseline/Solution30.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise30/src/main/java/baseline/Solution30.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
