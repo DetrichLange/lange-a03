@@ -2,6 +2,8 @@ package baseline;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution34Test {
@@ -25,5 +27,7 @@ class Solution34Test {
         };
 
         String[] actual = testApp.removeNameFromArray(employeeNames, "Jackie Jackson");
+
+        assertEquals(Arrays.toString(actual), Arrays.toString(expected));
     }
 }
