@@ -79,7 +79,7 @@ public class Solution37 {
     }
 
     private void printOutput(List<Character> passwordList){
-        System.out.printf("Your password is ");
+        System.out.print("Your password is ");
         for(char passwordChar : passwordList){
             System.out.print(passwordChar);
         }
